@@ -4,7 +4,7 @@
 # A lookup table for EPEL GPG keys & RPM URLs for various RedHat releases
 {% if ( grains['saltversion'] >= '2017.7.0' and grains['osmajorrelease'] == 5 ) or ( grains['saltversion'] < '2017.7.0' and grains['osmajorrelease'][0] == '5' ) %}
   {% set pkg = {
-    'key': 'https://archives.fedoraproject.org/pub/archive/epel/RPM-GPG-KEY-EPEL-5',
+    'key': 'https://archives.fedoraproject.org/pub/archive/epel/RPM-GPG-KEY-EPEL',
     'key_hash': 'md5=a1d12cd9628338ddb12e9561f9ac1d6a',
     'rpm': 'https://archives.fedoraproject.org/pub/archive/epel-release-latest' ~ epel_release|default('5-4', true) ~ '.noarch.rpm',
   } %}
