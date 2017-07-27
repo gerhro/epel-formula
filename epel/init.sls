@@ -5,7 +5,7 @@
 {% if ( grains['saltversion'] >= '2017.7.0' and grains['osmajorrelease'] == 5 ) or ( grains['saltversion'] < '2017.7.0' and grains['osmajorrelease'][0] == '5' ) %}
   {% set pkg = {
     'key': 'https://archives.fedoraproject.org/pub/archive/epel/RPM-GPG-KEY-EPEL',
-    'key_hash': 'md5=a1d12cd9628338ddb12e9561f9ac1d6a',
+    'key_hash': 'md5=3b3280f24c2afacf75e70f2284569161',
     'rpm': 'https://archives.fedoraproject.org/pub/archive/epel-release-latest-5.noarch.rpm',
   } %}
 {% elif ( grains['saltversion'] >= '2017.7.0' and grains['osmajorrelease'] == 6 ) or ( grains['saltversion'] < '2017.7.0' and grains['osmajorrelease'][0] == '6' ) %}
